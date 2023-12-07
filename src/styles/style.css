@@ -133,7 +133,8 @@
 /* home end */
 
 /* card start */
-#manga #anime {
+#manga,
+#anime {
   color: #fff;
 }
 
