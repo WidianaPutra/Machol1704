@@ -133,11 +133,12 @@
 /* home end */
 
 /* card start */
-#manga {
+#manga #anime {
   color: #fff;
 }
 
-#manga h1 {
+#manga h1,
+#anime h1 {
   text-align: center;
   font-size: 30px;
   font-family: var(--pop);
