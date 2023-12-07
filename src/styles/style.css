@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --pop: poppins;
+  --robo: roboto;
+  --Dark: rgb(12, 12, 12, 0.5);
+}
+
+.blur {
+  backdrop-filter: blur(2px);
+  background-color: var(--Dark);
+}
+/* navbar start */
+.container-navbar {
+  position: fixed;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: crimson;
+  z-index: 9999;
+}
+
+.container-navbar .logo {
+  color: #fff;
+  font-family: var(--pop);
+}
+
+.list-item,
+.logo {
+  margin: 0px 3.5%;
+}
+
+.list-item {
+  display: flex;
+  transition: all 1s;
+}
+
+.list-item a {
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--robo);
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-item {
+    position: fixed;
+    width: 35%;
+    height: 70vh;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    background: rgb(207, 21, 58);
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    border-radius: 0px 0px 0px 40px;
+  }
+}
+/* navbar end */
+
+/* home start */
+#home {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contain {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../assets//images/bgimg.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 0;
+}
+
+.contain {
+  text-align: center;
+  font-family: var(--pop);
+  color: #fff;
+  font-weight: 100;
+  scale: 10%;
+  transition: all 1.4s;
+}
+
+.contain button {
+  background-color: crimson;
+  color: #fff;
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  h3 {
+    font-size: 15px;
+  }
+  .contain {
+    padding: 30px;
+  }
+}
+/* home end */
+
+/* card start */
+#anime {
+  color: #fff;
+}
+
+#anime h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: var(--pop);
+  font-weight: 100;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #fff;
+}
+
+.card {
+  width: 250px;
+  margin: 20px;
+  scale: 30%;
+  transition: all 0.7s;
+}
+
+.card .img {
+  width: 100%;
+  aspect-ratio: 8/13;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  border-radius: 15px;
+}
+
+.card img:hover {
+  scale: 105%;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-family: var(--pop);
+  font-weight: 100;
+}
+
+.card h3:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    margin: 10px;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .card {
+    margin: 5px;
+    width: 130px;
+  }
+  .card h3 {
+    font-size: 11px;
+  }
+}
+/* card end */
+
+/* controll page start */
+#controll-page {
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#controll-page button {
+  width: 50px;
+  height: 40px;
+  background-color: crimson;
+  border-radius: 10px;
+  font-family: var(--pop);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#controll-page h1 {
+  color: #fff;
+  font-family: var(--pop);
+  padding: 10px;
+}
+/* controll page end */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  border: 2px solid black;
+  box-sizing: border-box;
+  font-family: var(--pop);
+  font-size: 20px;
+}
+
+footer a {
+  color: #fff;
+}

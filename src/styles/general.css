@@ -1,0 +1,10 @@
+.hidden {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .hidden {
+    display: block;
+  }
+}

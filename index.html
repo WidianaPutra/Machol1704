@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/general.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Machol1704</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="container-navbar">
+      <div class="logo">
+        <h1>Machol1704</h1>
+        <img src="./src/assets/icons/menu.svg" alt="" class="hidden open" />
+      </div>
+      <ul class="list-item">
+        <ul>
+          <img src="./src/assets/icons/close.svg" alt="" class="hidden close" />
+        </ul>
+        <ul>
+          <a href="#home">Home</a>
+        </ul>
+        <ul>
+          <a href="#anime">Anime</a>
+        </ul>
+        <ul>
+          <a href="#" class="come">Manga</a>
+        </ul>
+        <ul>
+          <a href="#footer">Footer</a>
+        </ul>
+      </ul>
+    </nav>
+    <!-- navbar close -->
+
+    <!-- home start -->
+    <div id="home">
+      <div class="container-contain">
+        <div class="contain">
+          <h1>Machol1704</h1>
+          <h3>Habiskan Waktu Mu Untuk Nonton Anime</h3>
+          <a href="#anime"><button>Anime</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- home end -->
+
+    <div class="blur">
+      <!-- container card start-->
+      <div id="anime">
+        <h1>Anime</h1>
+        <div id="root"></div>
+      </div>
+      <!-- container card end-->
+
+      <!-- controll page -->
+      <div id="controll-page">
+        <button id="min">-</button>
+        <h1 id="page">1</h1>
+        <button id="plus">+</button>
+      </div>
+      <!-- controll page -->
+
+      <footer>
+        <p>
+          created By:
+          <a href="https://instagram.com/widianaputra07?igshid=OGQ5ZDc2ODk2ZA=="
+            >@SuryaWidiana</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script src="./src/scripts/card.js"></script>
+    <script src="./src/scripts/script.js"></script>
+  </body>
+</html>
