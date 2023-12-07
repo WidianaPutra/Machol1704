@@ -2,7 +2,7 @@ let page = 1;
 const root = document.getElementById("root");
 
 async function fetchData() {
-  const url = `https://api.jikan.moe/v4/top/anime?page=${page}`;
+  const url = `https://api.jikan.moe/v4/top/manga?page=${page}`;
 
   try {
     const response = await fetch(url);
@@ -40,6 +40,7 @@ document.getElementById("plus").addEventListener("click", () => {
   root.innerHTML = "";
   document.getElementById("page").innerHTML = page;
   renderData();
+  location.href = "#anime";
 });
 
 document.getElementById("min").addEventListener("click", () => {
@@ -48,6 +49,7 @@ document.getElementById("min").addEventListener("click", () => {
   page === 0 ? (page = 1) : null;
   document.getElementById("page").innerHTML = page;
   renderData();
+  location.href = "#anime";
 });
 
 renderData();

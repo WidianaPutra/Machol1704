@@ -1,7 +1,3 @@
-$(".come").click(() => {
-  alert("Belom tersedia lur");
-});
-
 // navbar start
 $(".open").click(() => {
   $(".list-item").css({
