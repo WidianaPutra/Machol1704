@@ -62,7 +62,7 @@
 
   .list-item {
     position: fixed;
-    width: 35%;
+    width: 50%;
     height: 70vh;
     top: 0;
     right: 0;
@@ -157,6 +157,7 @@
   margin: 20px;
   scale: 30%;
   transition: all 0.7s;
+  color: #fff;
 }
 
 .card .img {
