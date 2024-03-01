@@ -1,6 +1,7 @@
 let page = 1;
 const root = document.getElementById("root");
 
+// fetch data
 async function fetchData() {
   const url = `https://api.jikan.moe/v4/top/manga?page=${page}`;
 
@@ -14,6 +15,7 @@ async function fetchData() {
   }
 }
 
+//render data
 async function renderData() {
   const datas = await fetchData();
 
@@ -35,14 +37,17 @@ async function renderData() {
   });
 }
 
+// prev page
 document.getElementById("plus").addEventListener("click", () => {
   page += 1;
   root.innerHTML = "";
   document.getElementById("page").innerHTML = page;
   renderData();
   location.href = "#anime";
+  scrollTo({ top: 0, behavior: "smooth" });
 });
 
+// next page
 document.getElementById("min").addEventListener("click", () => {
   page -= 1;
   root.innerHTML = "";
@@ -50,6 +55,7 @@ document.getElementById("min").addEventListener("click", () => {
   document.getElementById("page").innerHTML = page;
   renderData();
   location.href = "#anime";
+  scrollTo({ top: 0, behavior: "smooth" });
 });
 
 renderData();

@@ -1,3 +1,5 @@
+// this file for parallax effect in page
+
 // navbar start
 $(".open").click(() => {
   $(".list-item").css({
@@ -10,13 +12,11 @@ $(".close").click(() => {
     transform: "translateX(100%)",
   });
 });
-// navbar end
 
 // home start
 $(".contain").css({
   scale: "100%",
 });
-// home end
 
 // card start
 $(window).scroll(function () {
@@ -29,7 +29,6 @@ $(window).scroll(function () {
     }
   });
 });
-// card end
 
 $(".controll-page").css({
   zIndex: 10,
